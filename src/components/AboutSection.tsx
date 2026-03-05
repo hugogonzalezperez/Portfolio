@@ -2,8 +2,8 @@ import { motion } from 'motion/react';
 import type { ReactNode } from 'react';
 
 const SKILLS = [
-  'TypeScript', 'React', 'Next.js', 'Node.js',
-  'PostgreSQL', 'CSS / Tailwind', 'Git', 'Docker',
+  'Python', 'Java', 'C++', 'JavaScript',
+  'TypeScript', 'React', 'MySQL', 'Git',
 ];
 
 function FadeUp({ children, delay = 0 }: { children: ReactNode; delay?: number }) {
@@ -41,7 +41,7 @@ export function AboutSection() {
             fontWeight: 600, color: 'var(--fg-4)',
             textTransform: 'uppercase', letterSpacing: '0.1em', margin: 0,
           }}>
-            About me
+            Sobre mí
           </h2>
         </div>
       </FadeUp>
@@ -61,11 +61,11 @@ export function AboutSection() {
               letterSpacing: '-0.03em', lineHeight: 1.2,
               margin: '0 0 1.5rem',
             }}>
-              Passionate about
+              Apasionado por
               <br />
-              <span style={{ color: 'var(--accent)' }}>crafting great</span>
+              <span style={{ color: 'var(--accent)' }}>crear software</span>
               <br />
-              software.
+              de calidad.
             </h3>
           </FadeUp>
 
@@ -75,10 +75,7 @@ export function AboutSection() {
               lineHeight: 1.75, color: 'var(--fg-3)',
               margin: '0 0 1rem', maxWidth: '50ch', fontWeight: 400,
             }}>
-              I'm a software developer from Spain, focused on building clean,
-              performant, and user-centric web applications. I care deeply about
-              developer experience, accessibility, and writing code that's easy to
-              maintain and a pleasure to work with.
+              Soy graduado en **Ingeniería Informática por la Universidad de La Laguna (ULL)**, donde he adquirido una sólida base en algoritmos, estructuras de datos y programación orientada a objetos.
             </p>
           </FadeUp>
 
@@ -88,8 +85,7 @@ export function AboutSection() {
               lineHeight: 1.75, color: 'var(--fg-3)',
               margin: '0 0 2rem', maxWidth: '50ch', fontWeight: 400,
             }}>
-              Currently looking for opportunities to work on meaningful projects
-              with teams that value quality, clarity, and continuous improvement.
+              Me interesan la inteligencia artificial, el desarrollo web y el diseño de aplicaciones escalables. He trabajado en proyectos que van desde programas de consola en C++ hasta sistemas complejos como Parky.
             </p>
           </FadeUp>
 
@@ -101,10 +97,10 @@ export function AboutSection() {
               fontFamily: 'var(--font-mono)', fontSize: '0.8rem',
             }}>
               <span style={{ color: 'var(--fg-5)', marginRight: '0.5rem' }}>{'// '}</span>
-              <span style={{ color: 'var(--accent)' }}>available</span>
+              <span style={{ color: 'var(--accent)' }}>disponible</span>
               <span style={{ color: 'var(--fg-4)', margin: '0 0.35rem' }}>:</span>
               <span style={{ color: '#059669' }}>true</span>
-              <span style={{ color: 'var(--fg-5)', marginLeft: '0.5rem' }}>| Spain 🇪🇸</span>
+              <span style={{ color: 'var(--fg-5)', marginLeft: '0.5rem' }}>| Tenerife, España 🇪🇸</span>
             </div>
           </FadeUp>
         </div>
@@ -118,7 +114,7 @@ export function AboutSection() {
               textTransform: 'uppercase', letterSpacing: '0.1em',
               margin: '0 0 1.25rem',
             }}>
-              Technologies
+              Tecnologías
             </p>
           </FadeUp>
 
@@ -149,9 +145,9 @@ export function AboutSection() {
           <FadeUp delay={0.3}>
             <div style={{ marginTop: '2.5rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               {[
-                { label: 'Frontend Development', value: 'React, Next.js, TypeScript' },
-                { label: 'Backend & APIs', value: 'Node.js, REST, PostgreSQL' },
-                { label: 'Tooling & DevOps', value: 'Git, Docker, CI/CD' },
+                { label: 'Lenguajes', value: 'Python, Java, C++, JS/TS' },
+                { label: 'Herramientas & DB', value: 'Git, GitHub, MySQL, VS Code' },
+                { label: 'Intereses', value: 'IA, Web Dev, Software Escalable' },
               ].map(item => (
                 <div key={item.label} style={{
                   display: 'flex', flexDirection: 'column', gap: '0.25rem',
