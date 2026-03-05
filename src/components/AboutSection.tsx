@@ -41,7 +41,7 @@ export function AboutSection() {
             fontWeight: 600, color: 'var(--fg-4)',
             textTransform: 'uppercase', letterSpacing: '0.1em', margin: 0,
           }}>
-            Sobre mí
+            About me
           </h2>
         </div>
       </FadeUp>
@@ -61,11 +61,11 @@ export function AboutSection() {
               letterSpacing: '-0.03em', lineHeight: 1.2,
               margin: '0 0 1.5rem',
             }}>
-              Apasionado por
+              Passionate about
               <br />
-              <span style={{ color: 'var(--accent)' }}>crear software</span>
+              <span style={{ color: 'var(--accent)' }}>creating software</span>
               <br />
-              de calidad.
+              of quality.
             </h3>
           </FadeUp>
 
@@ -75,8 +75,7 @@ export function AboutSection() {
               lineHeight: 1.75, color: 'var(--fg-3)',
               margin: '0 0 1rem', maxWidth: '50ch', fontWeight: 400,
             }}>
-              Soy graduado en **Ingeniería Informática por la Universidad de La Laguna (ULL)**, donde he adquirido una sólida base en algoritmos, estructuras de datos y programación orientada a objetos.
-            </p>
+              I graduated in Computer Engineering from the University of La Laguna (ULL), where I developed a solid foundation in algorithms, data structures, and object-oriented programming.            </p>
           </FadeUp>
 
           <FadeUp delay={0.15}>
@@ -85,8 +84,7 @@ export function AboutSection() {
               lineHeight: 1.75, color: 'var(--fg-3)',
               margin: '0 0 2rem', maxWidth: '50ch', fontWeight: 400,
             }}>
-              Me interesan la inteligencia artificial, el desarrollo web y el diseño de aplicaciones escalables. He trabajado en proyectos que van desde programas de consola en C++ hasta sistemas complejos como Parky.
-            </p>
+              I am interested in artificial intelligence, web development, and scalable application design. I have worked on projects ranging from C++ console programs to complex systems such as Parky.            </p>
           </FadeUp>
 
           <FadeUp delay={0.2}>
@@ -97,7 +95,7 @@ export function AboutSection() {
               fontFamily: 'var(--font-mono)', fontSize: '0.8rem',
             }}>
               <span style={{ color: 'var(--fg-5)', marginRight: '0.5rem' }}>{'// '}</span>
-              <span style={{ color: 'var(--accent)' }}>disponible</span>
+              <span style={{ color: 'var(--accent)' }}>Availability</span>
               <span style={{ color: 'var(--fg-4)', margin: '0 0.35rem' }}>:</span>
               <span style={{ color: '#059669' }}>true</span>
               <span style={{ color: 'var(--fg-5)', marginLeft: '0.5rem' }}>| Tenerife, España 🇪🇸</span>
@@ -114,7 +112,7 @@ export function AboutSection() {
               textTransform: 'uppercase', letterSpacing: '0.1em',
               margin: '0 0 1.25rem',
             }}>
-              Tecnologías
+              Technologies
             </p>
           </FadeUp>
 
@@ -145,9 +143,9 @@ export function AboutSection() {
           <FadeUp delay={0.3}>
             <div style={{ marginTop: '2.5rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               {[
-                { label: 'Lenguajes', value: 'Python, Java, C++, JS/TS' },
-                { label: 'Herramientas & DB', value: 'Git, GitHub, MySQL, VS Code' },
-                { label: 'Intereses', value: 'IA, Web Dev, Software Escalable' },
+                { label: 'Languages', value: 'Python, Java, C++, JS/TS' },
+                { label: 'Tools & DB', value: 'Git, GitHub, MySQL, VS Code' },
+                { label: 'Interests', value: 'IA, Web Dev, Software Escalable' },
               ].map(item => (
                 <div key={item.label} style={{
                   display: 'flex', flexDirection: 'column', gap: '0.25rem',
