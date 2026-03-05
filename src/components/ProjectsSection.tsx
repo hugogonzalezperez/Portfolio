@@ -15,36 +15,42 @@ interface Project {
 
 const PROJECTS: Project[] = [
   {
-    id: 'devstack',
-    title: 'DevStack',
+    id: 'parky',
+    title: 'Parky',
     description:
-      'Full-stack productivity toolkit for developers. Includes a CLI tool and a web dashboard for managing projects, snippets, and environment configs across teams.',
-    tech: ['TypeScript', 'React', 'Node.js', 'SQLite'],
-    github: '#', live: '#', year: '2025', featured: true,
+      'Marketplace para la gestión de aparcamientos en Tenerife. Incluye mapas interactivos, disponibilidad en tiempo real y sistema de reservas seguro.',
+    tech: ['React', 'TypeScript', 'Tailwind CSS', 'Supabase', 'Leaflet'],
+    github: 'https://github.com/hugogonzalezperez/TFG',
+    year: '2025',
+    featured: true,
   },
   {
-    id: 'flowdash',
-    title: 'FlowDash',
+    id: 'game-of-life',
+    title: 'Game of Life',
     description:
-      'Real-time analytics dashboard with drag-and-drop widget layout, live charts, and WebSocket-powered data streams. Fully responsive.',
-    tech: ['React', 'Recharts', 'WebSockets', 'Tailwind'],
-    github: '#', year: '2025', featured: true,
+      'Implementación del Juego de la Vida de Conway en C++ utilizando la biblioteca SDL2 para el renderizado gráfico de la simulación.',
+    tech: ['C++', 'SDL2'],
+    github: 'https://github.com/hugogonzalezperez/Game-Of-Life',
+    year: '2024',
+    featured: true,
   },
   {
-    id: 'nodeapi',
-    title: 'NodeAPI Boilerplate',
+    id: 'maze-generator',
+    title: 'Maze Generator',
     description:
-      'Production-ready REST API starter with JWT auth, rate limiting, Zod validation, and full Jest test coverage. Used in 3 production services.',
-    tech: ['Node.js', 'Express', 'PostgreSQL', 'Jest'],
-    github: '#', live: '#', year: '2024',
+      'Generador de laberintos aleatorios implementado en C++, utilizando algoritmos de búsqueda para crear estructuras complejas.',
+    tech: ['C++'],
+    github: 'https://github.com/hugogonzalezperez/Maze-Generator',
+    year: '2024',
   },
   {
-    id: 'csslab',
-    title: 'CSS Lab',
+    id: 'sort-algorithms',
+    title: 'Sort Algorithms',
     description:
-      'A creative playground for advanced CSS experiments — scroll-driven animations, container queries, and visual demos with zero dependencies.',
-    tech: ['CSS', 'HTML', 'Vanilla JS'],
-    github: '#', live: '#', year: '2024',
+      'Visualizador de algoritmos de ordenación (Bubble, Quick, Merge, etc.) para analizar su eficiencia y comportamiento en tiempo real.',
+    tech: ['C++'],
+    github: 'https://github.com/hugogonzalezperez/Sort-Algorithms',
+    year: '2024',
   },
 ];
 
