@@ -13,10 +13,14 @@ import { ProjectsSection } from './components/ProjectsSection';
 import { ExperienceSection } from './components/ExperienceSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 export default function App() {
   return (
     <>
+      <Analytics />
+      <SpeedInsights />
       {/* 3D decorative background */}
       <ThreeBackground />
 
