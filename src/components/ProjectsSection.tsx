@@ -109,6 +109,7 @@ const PROJECTS: Project[] = [
     description: 'Prueba de rendimiento y carga masiva de datos. Enciclopedia interactiva que utiliza técnicas avanzadas de renderizado dinámico y fetching desde APIs externas.',
     tech: ['React', 'REST API', 'Lucide', 'Performance'],
     github: 'https://github.com/hugogonzalezperez/PokeDex',
+    live: 'https://pokedex-swart-eight-77.vercel.app/',
   },
 ];
 
