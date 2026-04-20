@@ -10,4 +10,17 @@ export default defineConfig({
     },
   },
   assetsInclude: ['**/*.svg', '**/*.csv'],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'vendor-react':    ['react', 'react-dom'],
+          'vendor-motion':   ['motion'],
+          'vendor-three':    ['three'],
+          'vendor-r3f':      ['@react-three/fiber', '@react-three/drei'],
+          'vendor-lucide':   ['lucide-react'],
+        },
+      },
+    },
+  },
 });
