@@ -25,14 +25,14 @@ export function HeroSection() {
       {/* ── Animated background clouds ── */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
         {/* Back layer — slow */}
-        <div className="absolute top-[8%]  animate-cloud-xl  opacity-90 [animation-delay:-14s]"><Cloud variant={0} width={300} /></div>
-        <div className="absolute top-[20%] animate-cloud-xl  opacity-75 [animation-delay:-34s]"><Cloud variant={2} width={190} /></div>
+        <div className={`absolute top-[8%]  opacity-90 [animation-delay:-14s]${shouldReduce ? '' : ' animate-cloud-xl'}`}><Cloud variant={0} width={300} /></div>
+        <div className={`absolute top-[20%] opacity-75 [animation-delay:-34s]${shouldReduce ? '' : ' animate-cloud-xl'}`}><Cloud variant={2} width={190} /></div>
         {/* Mid layer */}
-        <div className="absolute top-[5%]  animate-cloud-lg  opacity-95 [animation-delay:-20s]"><Cloud variant={1} width={250} /></div>
-        <div className="absolute top-[30%] animate-cloud-rev opacity-70 [animation-delay:-7s]" ><Cloud variant={0} width={220} /></div>
+        <div className={`absolute top-[5%]  opacity-95 [animation-delay:-20s]${shouldReduce ? '' : ' animate-cloud-lg'}`}><Cloud variant={1} width={250} /></div>
+        <div className={`absolute top-[30%] opacity-70 [animation-delay:-7s]${shouldReduce ? '' : ' animate-cloud-rev'}`}><Cloud variant={0} width={220} /></div>
         {/* Front layer — fast */}
-        <div className="absolute top-[60%] animate-cloud-md  opacity-60 [animation-delay:-4s]" ><Cloud variant={2} width={170} /></div>
-        <div className="absolute top-[75%] animate-cloud-rev-sm opacity-50 [animation-delay:-18s]"><Cloud variant={1} width={210} /></div>
+        <div className={`absolute top-[60%] opacity-60 [animation-delay:-4s]${shouldReduce ? '' : ' animate-cloud-md'}`}><Cloud variant={2} width={170} /></div>
+        <div className={`absolute top-[75%] opacity-50 [animation-delay:-18s]${shouldReduce ? '' : ' animate-cloud-rev-sm'}`}><Cloud variant={1} width={210} /></div>
 
         {/* ── Cartoon sun ── */}
         <div className="absolute top-6 right-10 md:right-16">
@@ -81,9 +81,9 @@ export function HeroSection() {
         className="flex-1 basis-1/2 h-screen relative max-md:flex-none max-md:basis-auto max-md:h-[60vh]"
       >
         <img
-          alt="Hugo González Pérez Avatar"
-          className="w-full h-full object-contain object-center"
           src="/models/SinFONDO1.gif"
+          alt="Hugo González Pérez"
+          className={`w-full h-full object-contain object-center${shouldReduce ? '' : ' animate-bob'}`}
         />
       </motion.div>
 

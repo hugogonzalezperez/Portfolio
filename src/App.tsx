@@ -1,9 +1,11 @@
-import { Navbar }         from '@/components/Navbar';
-import { HeroSection }    from '@/components/HeroSection';
-import { AboutSection }    from '@/components/AboutSection';
-import { ProjectsSection } from '@/components/ProjectsSection';
-import { SkillsSection }   from '@/components/SkillsSection';
-import { ContactSection }  from '@/components/ContactSection';
+import { lazy, Suspense } from 'react';
+import { Navbar }      from '@/components/Navbar';
+import { HeroSection } from '@/components/HeroSection';
+
+const AboutSection    = lazy(() => import('@/components/AboutSection').then(m => ({ default: m.AboutSection })));
+const ProjectsSection = lazy(() => import('@/components/ProjectsSection').then(m => ({ default: m.ProjectsSection })));
+const SkillsSection   = lazy(() => import('@/components/SkillsSection').then(m => ({ default: m.SkillsSection })));
+const ContactSection  = lazy(() => import('@/components/ContactSection').then(m => ({ default: m.ContactSection })));
 
 export default function App() {
   return (
@@ -12,12 +14,13 @@ export default function App() {
 
       <main>
         <HeroSection />
-        <AboutSection />
-        <ProjectsSection />
-        <SkillsSection />
-        <ContactSection />
+        <Suspense>
+          <AboutSection />
+          <ProjectsSection />
+          <SkillsSection />
+          <ContactSection />
+        </Suspense>
       </main>
     </>
   );
 }
-
